@@ -10,7 +10,7 @@ public class Rectif extends MyFrame{
 	
 			
 		else {
-			fillRect(x,x,10,100);
+			fillRect(x,60,10,x-20);
 		}
 			x+=20;
 		}
