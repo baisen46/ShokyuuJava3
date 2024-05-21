@@ -1,21 +1,18 @@
 
 public class Rectif extends MyFrame {
 	public void run() {
-		int x = 30;
+		
+		
+		int x =0;
+		int h =20;
 		setColor(0,128,0);
 		
 		int i;
-		for(i=0; i<9;i++) {
-			if(i == 4 && i <= 7) {
-				fillRect(x,100,10,100);
-			
-			
-			}
-			else {
-				fillRect(x,80,10,100);
-			}
-			x+=20;
-		
+		for(i=0;i<10;i++) {
+			fillRect(x,x,h,h);
+			x+=h;
+			h+=10;
+	
 		}
 	}
    
