@@ -1,18 +1,26 @@
 
 public class Animation extends MyFrame {
 	public void run() {
-		int x=30;
-		while(true) {
+		int y = 220;
+		int x = 30;
+		while (y >= 100) {
+			// (1)画面を消す
+			clear();
+			// (2)四角形を表示する
+			setColor(0, 128, 0);
+			fillRect(30, y, 10, 100); // xとyを用いて表示
+			y -= 5; // xを減らす(yは変更しない) 
+			sleep(0.1);
+		}
+		while (x <= 200) {
 			// (1)画面を消す
 			clear();
 			//(2)四角形を表示する
-			setColor(0,128,0);
-			fillRect(x,80,10,100);
-			x+=5;
-			if(x>200) { // xの値が200より大きくなったら
-				break; // whilによる繰り返しをやめる
-			}
+			setColor(0, 128, 0);
+			fillRect(x, y, 10, 100); // xとyを用いて表示
+			x += 5; // xを増やす(yは変更しない)
 			sleep(0.1);
+
 		}
 	}
 
